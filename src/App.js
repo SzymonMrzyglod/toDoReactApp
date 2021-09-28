@@ -19,7 +19,7 @@ class App extends Component{
         text: 'Zagrać w Wiedźmina',
         date: '2018-02-15',
         important: false,
-        active: true,
+        active: false,
         finishDate: null
       },
       {
