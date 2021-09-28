@@ -24,12 +24,13 @@ const TaskList = (props) => {
         <>
             <div className='active'>
                 <h1>Zadania do zrobienia</h1>
-                {activeTasks}
+                {activeTasks.length > 0 ? activeTasks : 'Wszystkie zadania wykonane!'}
             </div>
             <hr />
             <div className='done'>
-                <h2>Zadania zrobione (0)</h2>
-                {doneTasks}
+                <h2>Zadania zrobione ({done.length})</h2>
+                {done.length > 5 && <span>Wyświetlonych jest 5 ostatnich zadań</span>}
+                {doneTasks.slice(0,5)}
             </div>
         </>
       );

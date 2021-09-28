@@ -19,7 +19,7 @@ class App extends Component{
         text: 'Zagrać w Wiedźmina',
         date: '2018-02-15',
         important: false,
-        active: false,
+        active: true,
         finishDate: null
       },
       {
@@ -32,6 +32,22 @@ class App extends Component{
       },
       {
         id: 3,
+        text: 'Zagrać w Wiedźmina',
+        date: '2018-02-15',
+        important: true,
+        active: true,
+        finishDate: null
+      },
+      {
+        id: 4,
+        text: 'Zagrać w Wiedźmina',
+        date: '2018-02-15',
+        important: true,
+        active: true,
+        finishDate: null
+      },
+      {
+        id: 5,
         text: 'Zagrać w Wiedźmina',
         date: '2018-02-15',
         important: true,
