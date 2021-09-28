@@ -9,7 +9,7 @@ class App extends Component{
     tasks: [
       {
         id: 0,
-        text: 'Zagrać w Wiedźmina',
+        text: 'ZZZZZZZZZZZZZZZZZZZ',
         date: '2018-02-15',
         important: true,
         active: true,
@@ -17,7 +17,7 @@ class App extends Component{
       },
       {
         id: 1,
-        text: 'Zagrać w Wiedźmina',
+        text: 'SSSSSSSSSSSSSSSSSSSS',
         date: '2018-02-15',
         important: false,
         active: true,
@@ -25,7 +25,7 @@ class App extends Component{
       },
       {
         id: 2,
-        text: 'Zagrać w Wiedźmina',
+        text: 'AAAAAAAAAAAAAAAAAAAA',
         date: '2018-02-15',
         important: false,
         active: true,
@@ -33,7 +33,7 @@ class App extends Component{
       },
       {
         id: 3,
-        text: 'Zagrać w Wiedźmina',
+        text: 'aaaaaaaaaaaaaa',
         date: '2018-02-15',
         important: true,
         active: true,
@@ -41,7 +41,7 @@ class App extends Component{
       },
       {
         id: 4,
-        text: 'Zagrać w Wiedźmina',
+        text: 'bbbbbbbbbbbbbbbb',
         date: '2018-02-15',
         important: true,
         active: true,
@@ -58,7 +58,7 @@ class App extends Component{
     ]
   }
   deleteTask = (id) => {
-    let tasks = [...this.state.tasks]; //KOPIA TABLICY TASKS
+    let tasks = [...this.state.tasks];
     tasks = tasks.filter(task => (
       task.id !== id
     ))
@@ -67,7 +67,6 @@ class App extends Component{
     })
   }
   changeTaskStatus = (id) => {
-    console.log('change w App id' + id);
     const tasks = [...this.state.tasks];
     tasks.forEach(task => {
       if(task.id === id){
@@ -80,7 +79,6 @@ class App extends Component{
     })
   }
   addTask = (text, date, important) => {
-    console.log("Data w add" + date);
     const task = {
       id: this.counter,
       text,
