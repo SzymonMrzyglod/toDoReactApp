@@ -6,6 +6,8 @@ const TaskList = (props) => {
         <Task 
             task={task}
             key = {task.id}
+            delete={props.delete} 
+            change={props.change}
         />
         ))
     return (

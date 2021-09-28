@@ -40,12 +40,24 @@ class App extends Component{
       },
     ]
   }
+  deleteTask = (id) => {
+    let tasks = [...this.state.tasks]; //KOPIA TABLICY TASKS
+    tasks = tasks.filter(task => (
+      task.id !== id
+    ))
+        this.setState({
+      tasks
+    })
+  }
+  changeTaskStatus = (id) => {
+    console.log('change w App id' + id);
+  }
   render(){
     return (
       <div className="App">
         to do app
         <AddTask />
-        <TaskList tasks={this.state.tasks}/>
+        <TaskList tasks={this.state.tasks} delete={this.deleteTask} change={this.changeTaskStatus}/>
       </div>
     );
   }
