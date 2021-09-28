@@ -51,6 +51,16 @@ class App extends Component{
   }
   changeTaskStatus = (id) => {
     console.log('change w App id' + id);
+    const tasks = [...this.state.tasks];
+    tasks.forEach(task => {
+      if(task.id === id){
+        task.active = false;
+        task.finishDate = new Date().getTime();
+      }
+    })
+    this.setState({
+      tasks,
+    })
   }
   render(){
     return (
